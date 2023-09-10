@@ -29,10 +29,10 @@ jobs:
      - run: ls /home/circleci/project
      #- run: cp Dockerfile /home/circleci/project/.
      - run: docker build  -t gurprit123/pythonci:v2 .
-     #- run: docker run -d --name pydemo gurprit123/pythonci:v2
+     - run: docker run -d --name pydemo gurprit123/pythonci:v2
 
      # deploy the image
-     - run: docker push gurprit123/pythonci:v2
+     #- run: docker push gurprit123/pythonci:v2
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
